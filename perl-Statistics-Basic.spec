@@ -4,7 +4,7 @@
 #
 Name     : perl-Statistics-Basic
 Version  : 1.6611
-Release  : 2
+Release  : 3
 URL      : https://cpan.metacpan.org/authors/id/J/JE/JETTERO/Statistics-Basic-1.6611.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/J/JE/JETTERO/Statistics-Basic-1.6611.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libs/libstatistics-basic-perl/libstatistics-basic-perl_1.6611-1.debian.tar.xz
