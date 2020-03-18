@@ -4,7 +4,7 @@
 #
 Name     : perl-Statistics-Basic
 Version  : 1.6611
-Release  : 11
+Release  : 12
 URL      : https://cpan.metacpan.org/authors/id/J/JE/JETTERO/Statistics-Basic-1.6611.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/J/JE/JETTERO/Statistics-Basic-1.6611.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libs/libstatistics-basic-perl/libstatistics-basic-perl_1.6611-1.debian.tar.xz
@@ -79,7 +79,7 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Statistics-Basic
-cp %{_builddir}/Statistics-Basic-1.6611/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-Statistics-Basic/5f571ce8ccb7c49ae308bbe9d818115bc10e99a0
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-Statistics-Basic/5f571ce8ccb7c49ae308bbe9d818115bc10e99a0
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -115,29 +115,29 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic.pod
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/ComputedVector.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/ComputedVector.pod
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/Correlation.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/Correlation.pod
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/Covariance.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/Covariance.pod
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/LeastSquareFit.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/LeastSquareFit.pod
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/Mean.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/Mean.pod
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/Median.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/Median.pod
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/Mode.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/Mode.pod
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/StdDev.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/StdDev.pod
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/Variance.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/Variance.pod
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/Vector.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/Vector.pod
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/_OneVectorBase.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/_OneVectorBase.pod
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/_TwoVectorBase.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Statistics/Basic/_TwoVectorBase.pod
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic.pod
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/ComputedVector.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/ComputedVector.pod
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/Correlation.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/Correlation.pod
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/Covariance.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/Covariance.pod
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/LeastSquareFit.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/LeastSquareFit.pod
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/Mean.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/Mean.pod
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/Median.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/Median.pod
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/Mode.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/Mode.pod
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/StdDev.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/StdDev.pod
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/Variance.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/Variance.pod
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/Vector.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/Vector.pod
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/_OneVectorBase.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/_OneVectorBase.pod
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/_TwoVectorBase.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Statistics/Basic/_TwoVectorBase.pod
